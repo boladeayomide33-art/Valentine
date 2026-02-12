@@ -2,30 +2,34 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Valentine For Tioluwanimi (Adumaadan mi) ❤️</title>
+<title>Valentine For Moyosoluwa ❤️</title>
 
 <style>
 body{
   margin:0;
   font-family:Georgia, serif;
   background:linear-gradient(45deg,#ffdde1,#ee9ca7);
-  overflow:hidden;
+  overflow-x:hidden;
   position:relative;
 }
 
 .page{
-  position:absolute;
-  width:100%;height:100%;
-  display:flex;justify-content:center;align-items:center;
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  padding-top:50px;
   transition:.7s;
 }
 .hidden{transform:translateX(100%);opacity:0;pointer-events:none;}
 
 .container{
   background:white;
-  padding:35px;
-  border-radius:20px;
+  width:90%;
   max-width:850px;
+  padding:25px;
+  border-radius:20px;
   text-align:center;
   box-shadow:0 10px 30px rgba(0,0,0,.2);
   position:relative;
@@ -71,6 +75,21 @@ button{
 }
 
 #noBtn{position:absolute;}
+
+/* Responsive for mobile */
+@media (max-width:600px){
+  .container{
+    font-size:16px;
+    padding:15px;
+  }
+  h1,h2{
+    font-size:20px;
+  }
+  .heart{
+    width:15px;
+    height:15px;
+  }
+}
 </style>
 </head>
 <body>
@@ -213,14 +232,14 @@ function type(){
 }
 type();
 
-/* Floating hearts continuously with random love messages */
+/* Floating hearts continuously with random mini love messages */
 const loveMessages=[
  "I love you ❤️","You are my sunshine 🌞","You complete me 💛","Adumaadan mi 💖",
  "My joy 😍","Forever yours 💌","My heart beats for you 💓","You are my dream ✨",
  "Every moment with you is magic 🌹","You make me smile 😘","My soul loves you ❤️",
  "You are perfect to me 💕","My happiness is you 💛","You are my miracle 🌟",
  "I cherish you 🥰","You are my everything 💖","My love grows for you 🌸",
- "You are my reason 💌","I adore you 😍","You are my heartbeat ❤️"
+ "You are my reason 💌","I adore you 😍","You are my heartbeat ❤️","You make life beautiful 💖"
 ];
 
 function createHeart(){
@@ -256,4 +275,4 @@ function yesValentine(){
 </script>
 
 </body>
-  </html>
+</html>
