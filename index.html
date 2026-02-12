@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Valentine For Tioluwanimi (Adumaadan mi) ❤️</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Georgia, serif;
+  background:linear-gradient(45deg,#ffdde1,#ee9ca7);
+  overflow:hidden;
+  position:relative;
+}
+
+.page{
+  position:absolute;
+  width:100%;height:100%;
+  display:flex;justify-content:center;align-items:center;
+  transition:.7s;
+}
+.hidden{transform:translateX(100%);opacity:0;pointer-events:none;}
+
+.container{
+  background:white;
+  padding:35px;
+  border-radius:20px;
+  max-width:850px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.2);
+  position:relative;
+  z-index:5;
+}
+
+button{
+  padding:12px 22px;
+  margin:10px;
+  border:none;border-radius:10px;
+  background:#e91e63;color:white;
+  font-size:16px;cursor:pointer;
+}
+
+/* Hearts */
+.heart{
+  position:absolute;
+  width:20px;height:20px;
+  background:red;
+  transform:rotate(45deg);
+  animation:floatUp linear infinite;
+  cursor:pointer;
+  z-index:1;
+}
+.heart:before,.heart:after{
+  content:'';position:absolute;width:20px;height:20px;
+  background:red;border-radius:50%;
+}
+.heart:before{top:-10px;}
+.heart:after{left:10px;}
+@keyframes floatUp{
+  0%{transform:translateY(0) rotate(45deg);}
+  100%{transform:translateY(-1000px) rotate(45deg);opacity:0;}
+}
+
+/* Confetti */
+.confetti{
+  position:absolute;width:8px;height:8px;
+  animation:fall 3s linear forwards;
+}
+@keyframes fall{
+  to{transform:translateY(800px) rotate(720deg);opacity:0;}
+}
+
+#noBtn{position:absolute;}
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page" id="p1">
+<div class="container">
+<h1>Happy Valentine Moyosoluwa ❤️</h1>
+<p>Welcome to the world where only you and I exist. I built this from my heart for you.</p>
+<button onclick="go(2)">Start</button>
+</div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page hidden" id="p2">
+<div class="container">
+<h2>A Message From My Heart 💌</h2>
+<p id="typingStatus">Mobolade is typing...</p>
+<p id="letter" style="text-align:left;line-height:1.8;"></p>
+<button onclick="go(3)">Next</button>
+</div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page hidden" id="p3">
+<div class="container">
+<h2>Our Memories</h2>
+<p>Every single moment since September 28, 2024 has been a blessing I cherish deeply in my heart.</p>
+<button onclick="go(4)">Next</button>
+</div>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page hidden" id="p4">
+<div class="container">
+<h2>Why I Love You</h2>
+<p>You changed my life in ways I cannot fully explain. Loving you feels divine and peaceful.</p>
+<button onclick="go(5)">Next</button>
+</div>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page hidden" id="p5">
+<div class="container">
+<h2>Compliments</h2>
+<p>Your smile, your heart, your presence — everything about you is special.</p>
+<button onclick="go(6)">Next</button>
+</div>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page hidden" id="p6">
+<div class="container">
+<h2>Our Story</h2>
+<p>We disagreed, we learned, we grew. And through it all, love remained the greatest.</p>
+<button onclick="go(7)">Next</button>
+</div>
+</div>
+
+<!-- PAGE 7 VIDEO -->
+<div class="page hidden" id="p7">
+<div class="container">
+<h2>Our Video 🎥</h2>
+<video width="100%" controls>
+<source src="our_video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<button onclick="go(8)">Next</button>
+</div>
+</div>
+
+<!-- PAGE 8 -->
+<div class="page hidden" id="p8">
+<div class="container">
+<h2>Tap the Hearts ❤️</h2>
+<p>Tap any floating heart to see hidden love messages.</p>
+<button onclick="go(9)">Next</button>
+</div>
+</div>
+
+<!-- PAGE 9 -->
+<div class="page hidden" id="p9">
+<div class="container">
+<h2>Will You Be My Valentine?</h2>
+<button onclick="yesValentine()">Yes ❤️</button>
+<button id="noBtn">No</button>
+</div>
+</div>
+
+<!-- PAGE 10 -->
+<div class="page hidden" id="p10">
+<div class="container">
+<h2>Forever With You ❤️</h2>
+<p>I love you endlessly, Adumaadan mi.</p>
+</div>
+</div>
+
+<script>
+function go(n){
+ document.querySelectorAll('.page').forEach(p=>p.classList.add('hidden'));
+ document.getElementById('p'+n).classList.remove('hidden');
+}
+
+/* FULL TYPEWRITER MESSAGE */
+const message = `Welcome to the world where only you and I exists hahaha. I made this when we broke up, regardless of what happened, I’ll still send it to you.
+
+Our beautiful love story started on September 28, 2024 ❤️. Even when we had different things in mind, not knowing we would become a very important piece in each other’s lives.
+
+Every moment we spent since September 28, 2024, every moment counts and it feels so great to be with you ❤️. Love comes at the least time we don’t expect. I truly believe God has a reason for bringing us together ❤️.
+
+When it got to you, everything about me changed — the way I chat, talk, interact, every single aspect of my life. I have always wanted to be different, to make a difference in ways others haven’t.
+
+You know how sweet it would be telling people about our love story? How we met, our silly fights, every little detail that could even motivate others. Everything is in God’s hands, but we have to play our part.
+
+We have to disagree to agree. I understand now what you were trying to say on Wednesday. I understand better, and I know you were saying it for us. It won’t happen again.
+
+Let’s work on our anger and our communication. We need to do better. You taught me one very important thing — to talk about what’s wrong. Let’s stand on that.
+
+I have never argued with you to prove you wrong. I always want us to talk things out so it ends right there.
+
+Love teaches. Love corrects. Love guides. Love forgives. The sad part, the fun part, the adventurous part — regardless of it all…
+
+LOVE IS THE GREATEST OF ALL ❤️
+
+I’m typing this at exactly 11am, February 12.
+
+I love you so, so, so much. I truly want us to grow and be TOGETHER no matter what life brings.
+
+I love you so much, Adumaadan mi ❤️`;
+
+let i=0;
+function type(){
+ if(i<message.length){
+  letter.innerHTML += message[i] === "\n" ? "<br><br>" : message[i];
+  i++;
+  setTimeout(type,25);
+ } else {
+  typingStatus.innerHTML="Message delivered ❤️";
+ }
+}
+type();
+
+/* Floating hearts continuously with random love messages */
+const loveMessages=[
+ "I love you ❤️","You are my sunshine 🌞","You complete me 💛","Adumaadan mi 💖",
+ "My joy 😍","Forever yours 💌","My heart beats for you 💓","You are my dream ✨",
+ "Every moment with you is magic 🌹","You make me smile 😘","My soul loves you ❤️",
+ "You are perfect to me 💕","My happiness is you 💛","You are my miracle 🌟",
+ "I cherish you 🥰","You are my everything 💖","My love grows for you 🌸",
+ "You are my reason 💌","I adore you 😍","You are my heartbeat ❤️"
+];
+
+function createHeart(){
+ const h=document.createElement('div');
+ h.className='heart';
+ h.style.left=Math.random()*window.innerWidth+'px';
+ h.style.width = h.style.height = (10 + Math.random()*20) + 'px';
+ h.style.animationDuration = (4 + Math.random()*6)+'s';
+ h.onclick = ()=>alert(loveMessages[Math.floor(Math.random()*loveMessages.length)]);
+ document.body.appendChild(h);
+ setTimeout(()=>h.remove(),8000);
+}
+setInterval(createHeart, 500);
+
+/* Moving No button */
+noBtn.onmouseenter=function(){
+ noBtn.style.top=Math.random()*70+'%';
+ noBtn.style.left=Math.random()*70+'%';
+}
+
+/* Confetti on Yes */
+function yesValentine(){
+ for(let i=0;i<80;i++){
+  const c=document.createElement('div');
+  c.className='confetti';
+  c.style.left=Math.random()*window.innerWidth+'px';
+  c.style.background=`hsl(${Math.random()*360},100%,50%)`;
+  document.body.appendChild(c);
+  setTimeout(()=>c.remove(),3000);
+ }
+ go(10);
+}
+</script>
+
+</body>
+  </html>
